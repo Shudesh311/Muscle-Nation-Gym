@@ -99,3 +99,4 @@ Watching for file changes with StatReloader
 [04/May/2026 19:07:05] "GET /fees/list/ HTTP/1.1" 200 273
 D:\avatar\backend\backend\settings.py changed, reloading.
 Watching for file changes with StatReloader
+D:\avatar\backend\backend\settings.py changed, reloading.
