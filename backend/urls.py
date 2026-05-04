@@ -1,3 +1,5 @@
+from django.contrib import admin
+from django.http import HttpResponse
 from django.urls import path
 from .views import admin_create
 from .views import admin_login
@@ -9,9 +11,14 @@ from .views import add_gym_fee, list_gym_fees ,search_admission
 from django.conf import settings
 from django.conf.urls.static import static
 
+def home(request):
+    return HttpResponse("Backend is running")
+
 urlpatterns = [
+    path("", home),
     path('admin/create/', admin_create),
     path("admin/login/", admin_login),
+    path('admin/', admin.site.urls),
     path("admission/create/", create_admission),
     path("admission/list/", list_admissions),
     path("admission/delete/<int:admission_id>/", delete_admission),
