@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path
+from .views import login_view
 from .views import admin_create
 from .views import admin_login
 from .views import create_admission
@@ -16,6 +17,7 @@ def home(request):
 
 urlpatterns = [
     path("", home),
+    path("api/login/", login_view),
     path('admin/create/', admin_create),
     path("admin/login/", admin_login),
     path('admin/', admin.site.urls),

@@ -1,5 +1,6 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.contrib.auth import authenticate
 from django.db import connection
 from django.core.files.storage import FileSystemStorage
 from datetime import datetime
@@ -15,6 +16,22 @@ def ensure_gym_fee_payment_columns():
 
         if "gpay_amount" not in columns:
             cursor.execute("ALTER TABLE gym_fees ADD COLUMN gpay_amount NUMERIC DEFAULT 0")
+
+
+@api_view(['POST'])
+def login_view(request):
+    username = request.data.get("username")
+    password = request.data.get("password")
+
+    if not username or not password:
+        return Response({"error": "Missing username or password"}, status=400)
+
+    user = authenticate(username=username, password=password)
+
+    if user:
+        return Response({"message": "Login success", "username": user.username}, status=200)
+
+    return Response({"error": "Invalid credentials"}, status=401)
 
 
 @api_view(['POST'])
