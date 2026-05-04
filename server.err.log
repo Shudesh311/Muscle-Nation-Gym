@@ -1,0 +1,101 @@
+Watching for file changes with StatReloader
+[04/May/2026 18:08:09] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:08:09,699] - Broken pipe from ('127.0.0.1', 58306)
+[04/May/2026 18:08:09] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:08:10,282] - Broken pipe from ('127.0.0.1', 58308)
+[04/May/2026 18:09:48] "OPTIONS /admin/login/ HTTP/1.1" 200 0
+Unauthorized: /admin/login/
+[04/May/2026 18:09:48] "POST /admin/login/ HTTP/1.1" 401 40
+[04/May/2026 18:09:51] "POST /admin/login/ HTTP/1.1" 200 49
+[04/May/2026 18:09:58] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:09:58] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:10:02] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:10:02] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:10:08] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:10:08] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:10:18] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:10:18] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:10:18] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:10:18] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:01] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:01] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:01] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:01] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:11] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:11] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:15] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:15] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:27] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:27] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:27] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:27] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:43] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:43] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:11:46] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:11:46] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:13:56] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:13:56] "GET /admission/list/ HTTP/1.1" 200 419
+[04/May/2026 18:14:01] "OPTIONS /admission/delete/16/ HTTP/1.1" 200 0
+[04/May/2026 18:14:01] "DELETE /admission/delete/16/ HTTP/1.1" 200 31
+[04/May/2026 18:14:01] "GET /admission/list/ HTTP/1.1" 200 212
+[04/May/2026 18:14:03] "OPTIONS /admission/delete/15/ HTTP/1.1" 200 0
+[04/May/2026 18:14:04] "DELETE /admission/delete/15/ HTTP/1.1" 200 31
+[04/May/2026 18:14:04] "GET /admission/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:34] "GET /admission/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:34] "GET /admission/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:48] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:48] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:52] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:14:52] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:15:36] "POST /admission/create/ HTTP/1.1" 201 29
+[04/May/2026 18:15:36] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:15:44] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:15:44] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:15:49] "GET /search-admission/?q=s HTTP/1.1" 200 53
+[04/May/2026 18:15:50] "GET /search-admission/?q=sh HTTP/1.1" 200 53
+[04/May/2026 18:15:52] "GET /search-admission/?q=01%20-%20shudesh HTTP/1.1" 200 2
+[04/May/2026 18:26:43] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:26:43] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:26:45] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:26:45] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:26:48] "GET /search-admission/?q=s HTTP/1.1" 200 53
+[04/May/2026 18:26:50] "GET /search-admission/?q=01%20-%20shudesh HTTP/1.1" 200 2
+D:\avatar\backend\backend\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\avatar\backend\backend\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\avatar\backend\backend\views.py changed, reloading.
+Watching for file changes with StatReloader
+[04/May/2026 18:34:59] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:42:18] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:42:18] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:42:21] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:42:21] "GET /fees/list/ HTTP/1.1" 200 2
+[04/May/2026 18:42:24] "GET /search-admission/?q=s HTTP/1.1" 200 53
+[04/May/2026 18:42:25] "GET /search-admission/?q=shu HTTP/1.1" 200 53
+[04/May/2026 18:42:27] "GET /search-admission/?q=01%20-%20shudesh HTTP/1.1" 200 2
+[04/May/2026 18:42:50] "OPTIONS /fees/add/ HTTP/1.1" 200 0
+[04/May/2026 18:42:50] "POST /fees/add/ HTTP/1.1" 201 40
+[04/May/2026 18:42:50] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:42:57] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:42:57] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:43:03] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:43:04] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:43:09] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:43:09] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:43:09] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:43:09] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:43:44] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:43:44] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:44:06] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:44:06] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:44:08] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:44:08] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:44:17] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:44:17] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 18:44:17] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 18:44:17] "GET /fees/list/ HTTP/1.1" 200 273
+[04/May/2026 19:07:05] "GET /admission/list/ HTTP/1.1" 200 211
+[04/May/2026 19:07:05] "GET /fees/list/ HTTP/1.1" 200 273
+D:\avatar\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
