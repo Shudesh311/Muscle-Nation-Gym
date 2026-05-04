@@ -390,6 +390,27 @@ def list_gym_fees(request):
     return Response(data, status=200)
 
 
+@api_view(['DELETE'])
+def delete_gym_fee(request, fee_id):
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute(
+                """
+                DELETE FROM gym_fees
+                WHERE id = %s
+                """,
+                [fee_id]
+            )
+
+            if cursor.rowcount == 0:
+                return Response({"error": "Fee record not found"}, status=404)
+
+        return Response({"message": "Fee record deleted"}, status=200)
+
+    except Exception as e:
+        return Response({"error": str(e)}, status=500)
+
+
 @api_view(['GET'])
 def search_admission(request):
     q = request.GET.get("q", "")

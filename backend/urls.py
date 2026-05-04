@@ -8,7 +8,7 @@ from .views import create_admission
 from .views import list_admissions
 from .views import delete_admission
 from .views import update_admission_photo
-from .views import add_gym_fee, list_gym_fees ,search_admission
+from .views import add_gym_fee, list_gym_fees, delete_gym_fee, search_admission
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,6 +27,7 @@ urlpatterns = [
     path('admission/update-photo/<int:admission_id>/', update_admission_photo),
     path("fees/add/", add_gym_fee),
     path("fees/list/", list_gym_fees),
+    path("fees/delete/<int:fee_id>/", delete_gym_fee),
     path("search-admission/", search_admission, name="search-admission")
 
 ]
